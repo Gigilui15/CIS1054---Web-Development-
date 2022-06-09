@@ -1,0 +1,27 @@
+{% extends "layout.html" %} 
+
+{% block header %}
+    {% include 'header.html'  %}
+{% endblock %}
+
+    {% block content %}
+    {# Displaying all the details and a picture of the chosen dish #}
+        <div class="content">
+            <h1>{{menuItem.name}}</h1>
+            <p>{{menuItem.description}}</p>
+            <price>€{{menuItem.price}}</price> 
+            </br>
+            <img src="{{menuItem.image}}" style="width: 25%">
+            </br> 
+            {# Buttons to go back to menu or add dish to Favourite #}
+            <a href = "categories.php">Back to Menu</a>
+
+            <form id="add-to-fav" action = "addFave.php?menuItem={{menuItem.id}}" method = 'POST'>
+                <input type = "submit" value="Add to Favorites">
+            </form>
+        </div>  
+    {%endblock%}
+
+{% block footer %}
+    {% include 'footer.html'  %}
+{% endblock %}

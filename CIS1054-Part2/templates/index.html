@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block header %}
+    {% include 'header.html'  %}
+{% endblock %}
+
+{% block content %}
+<section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets\image\back1.png" alt="logo image" class="back">
+        <div class="row">
+            <div class="col-lg-8">
+                <text1>Welcome to </text1>
+                <text2>The Wild West Bar & Grill</text2>
+            </div>
+
+            <span class="outter"></span>
+            <button class="tButton" type="button" onclick="location.href = 'https://www.facebook.com/watch/?v=979665619612899'">Trailer</button>
+        </div>
+    </div>
+</section>
+
+
+    <section id="info">
+        <hr class="seperator">
+        <dir class= "locationBox">
+            <div class="location1">
+                <text1>Where</text1><br>
+                <text1>WE ARE</text1><br>
+                <text1>Triq l-Assedju l-Kbir 1565, Birgu</text1><br><br>
+            </div>
+
+            <!--<span class="bHours"></span>-->
+            <div class="hours">
+                <text4><u>OPENING HOURS</u></text4><br>
+                <text4>Monday to Sunday</text4><br>
+                <text4>9 a.m to 11 p.m</text4><br>
+            </div>
+        </div>
+
+        <div class="map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.6532992751056!2d14.521379514898358!3d35.88546369999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e5bad72b79f27%3A0x9107d6f1fccdad88!2sThe%20Wild%20West%20Bar%20%26%20Grill!5e1!3m2!1sen!2smt!4v1649887661379!5m2!1sen!2smt"
+             width="600" height="450" style="border:5;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+{% endblock %} 
+
+{% block footer %}
+    {% include 'footer.html'  %}
+{% endblock %}

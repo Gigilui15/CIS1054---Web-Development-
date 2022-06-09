@@ -1,0 +1,34 @@
+{% extends "layout.html" %} 
+
+{% block header %}
+    {% include 'header.html'  %}
+{% endblock %}
+
+{% block content %}
+<form action="bookTable.php" method="post">
+
+    <section id="container2">
+        <text1>RESERVATION </text1>
+        <span class="nextLine"></span>
+        <br>
+        <text2>Book a Table</text2>
+
+        <input type="text" name="name" id="name" placeholder="Your Name" data-rule="minlen:4" required="true" /><br/>
+        <input type="email" name="email" id="email" placeholder="Your Email" required="true" data-rule="minlen:5" /><br/>
+        <input type="text" name="phone" id="phone" placeholder="Your Phone Number" data-rule="minlen:8" required="true" /><br/>
+        <input type="date" name="date" id="date" placeholder="Date" required="true" /><br/>
+        <input type="time" name="time" id="time" placeholder="Time" required="true" /><br/>
+        <input type="number" name="people" id="people" placeholder="Number of people" required="true" /><br/>
+        <textarea id="comment" name="comment" placeholder="Type comment..."  required="true" minlength=10></textarea><br/>
+        <input type="submit" name="ok" value="add" /><br/><br/><br/>
+
+    </section>
+
+
+</form>
+
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer.html'  %}
+{% endblock %}

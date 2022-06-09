@@ -1,0 +1,63 @@
+{% extends "layout.html" %} 
+
+{% block header %}
+    {% include 'header.html'  %}
+{% endblock %}
+
+{% block content %}
+    <form action="mail.php" method="post">
+        <section id="contact">
+            <text1>Contact </text1>
+            <span class="nextLine"></span>
+            <br>
+            <text2>Contact Us</text2>
+            <section id="fillIn">
+
+                <input type="text" name="name" id="name" placeholder="Your Name" data-rule="minlen:4" required="true">
+                <input type="email" name="email" id="email" placeholder="Your Email" required="true" data-rule="minlen:5">
+                <input type="text" name="subject" id="subject" placeholder="Subject" required="true">
+                <textarea id="comment" name="comment" placeholder="Type comment..." required="true" minlength=10></textarea>
+                <input type="submit" name="ok" value="Submit" />
+            </section>
+        </section>
+    </form>
+    <section id="resInfo"> 
+        <div class="address">
+            
+            <location>
+                <h4>Location: </h4>
+            </location>
+            <t1>Triq l-Assedju l-Kbir 1565, Birgu</t1>
+        </div>
+
+        <div class="email">
+            
+            <location>
+                <h4>Email: </h4>
+            </location>
+            <t1>thewildwestmalta@gmail.com</t1>
+        </div>
+
+        <div class="phone">
+            
+            <location>
+                <h4>Phone: </h4>
+            </location>
+            <t1>9991 1961</t1>
+        </div>
+
+        <div class="facebook">
+            
+            <location>
+                <h4>Facebook: </h4>
+            </location>
+            <t1>https://www.facebook.com/TheWildWestMalta/</t1>
+        </div>
+
+    </section>
+    
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer.html'  %}
+{% endblock %}

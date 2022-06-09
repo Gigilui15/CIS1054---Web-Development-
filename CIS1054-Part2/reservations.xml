@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<document>
+
+    <data>
+        <name>try</name>
+        <email>try@gmail.com</email>
+        <phone>1234567</phone>
+        <date>2022-04-17</date>
+        <time>22:01</time>
+        <people>1</people>
+        <comment>this is a trial</comment>
+    </data>
+<data/><data/><data><name>Luigi Naudi</name><email>luigi.naudi@gmail.com</email><phone>+4979584672</phone><date>2022-05-07</date><time>08:54</time><people>25</people><comment>test</comment></data><data><name>Luigi Naudi</name><email>luigi.naudi@gmail.com</email><phone>+4979584672</phone><date>2022-05-19</date><time>04:56</time><people>5</people><comment>ghfghghghgh</comment></data><data><name>nicholas</name><email>nicholas.vella.21@um.edu.mt</email><phone>79861622</phone><date>2022-05-24</date><time>19:16</time><people>2</people><comment>;lrme;l</comment></data><data><name>Luigi Naudi</name><email>luigi.naudi@gmail.com</email><phone>+416589863</phone><date>2022-05-27</date><time>05:06</time><people>5</people><comment>y</comment></data><data><name>Luigi Naudi</name><email>luigi.naudi@gmail.com</email><phone>+416589863</phone><date>2022-05-27</date><time>05:06</time><people>5</people><comment>y</comment></data><data><name>Luigi Naudi</name><email>luigi.naudi@gmail.com</email><phone>+784541</phone><date>2022-05-14</date><time>07:08</time><people>4</people><comment/></data></document>

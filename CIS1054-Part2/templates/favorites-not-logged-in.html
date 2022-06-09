@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block header %}
+    {% include 'header.html'  %}
+{% endblock %}
+
+    {# Default page for when favourites are empty #}
+    {% block content %}
+
+        <div class="content">
+            </br>
+            <h1>You Have No Favourites Added!</h1>
+            </br>
+        </div>
+
+
+    {% endblock %}
+
+{% block footer %}
+    {% include 'footer.html'  %}
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "layout.html" %} 
+
+{% block header %}
+    {% include 'header.html'  %}
+{% endblock %}
+
+    {% block content %}
+      <div class="owners">
+        <div class="wrapper">
+          <nav>
+            {# For loop creating the Menu Nav Bar Dynamically #}
+            <div class="items">
+              <a href= "categories.php">All</a>
+                {% for category in categories %}
+                  <a href="categories.php?id={{ category.CategoryID }}">{{ category.CategoryName }}</a>
+                {% endfor %}
+            </div>
+          </nav>
+          <div class="dishes">
+            {# For loop listing the dish names and prices Dynamically #}
+            {% for item in dishes%}
+              <li><a href="details.php?id={{item.id}}">{{ item.name }}</a> ~ €{{ item.price }}</li>
+            {% endfor %}
+        </div>      
+      </div>
+    </div>
+  {% endblock %}
+
+{% block footer %}
+    {% include 'footer.html'  %}
+{% endblock %}

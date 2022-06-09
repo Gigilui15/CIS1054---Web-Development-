@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block header %}
+    {% include 'header.html'  %}
+{% endblock %}
+
+{% block content %}
+    <div class="contentHistory">
+        {# Some information about the Restaurant #}
+        <h1>Wild West Bar and Grill Staff and Story:</h1>
+            <p>Wild West Bar and Grill was founded back in 1996 when Jake Smith embarked upon a project of opening our Restaurant. Being family-based, the restaurant aims mainly to serve delicious traditional Western food from the heart.<br/>
+            <br/>Many Events are hosted at Wild West Bar and Grill such as Kareoke nights, Bingo Knights, and many more!</p>
+            <br/>
+            <p>Pay us a visit and you are sure to see our staff keeping busy and meeting every customer's needs.<br/> And who knows? You might just bump into our mascot one day...</p>
+    </div>        
+                
+    <div class="owners">
+        {# For loop creating cards from the owners array #}
+        {% for owner in owners %}
+            <div class="card">
+                <img src="{{ owner.image }}" alt="{{ owner.name }}" style="width:80%">
+                    <div class="container">
+                        <h4><b>{{ owner.name }}</b></h4> 
+                        <p>{{ owner.bio }}</p> 
+                    </div>
+            </div>
+            <br/>
+        {% endfor %} 
+    </div>
+    
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer.html'  %}
+{% endblock %}

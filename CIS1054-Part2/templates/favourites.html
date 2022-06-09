@@ -1,0 +1,46 @@
+{% extends "layout.html" %} 
+
+{% block header %}
+    {% include 'header.html'  %}
+{% endblock %}
+
+{% block content %}
+    <div class="faves">
+        <h1>Your Favourites</h1>
+            {% for favItem in favourites %}
+                {# Displaying Each Favourite as a Card containing details and an image #}
+                <div class="card">
+                    <img src="{{favItem.image}}" alt="{{favItem.name}}" style="width:100%">
+
+                    <div class="container">
+                        <h4><b>{{favItem.name}}</b></h4>
+                        <p>{{favItem.description}}</p>
+                        <p>€{{favItem.price}} </p>
+                            <form id="rem-from-fav" action = "remFave.php?menuItem={{favItem.id}}" method = 'POST'>
+                                <input type = "submit" value="Delete">
+                            </form>
+                    </div>
+                </div>
+                <br/>
+            {% endfor %}
+                {# Mail Section to Send Favourites to user #}
+                <div class = "mailbutton">        
+                    <form method="POST" action="sendFave.php">
+                        <br><br>
+                            <h3>Fill in if you would like your favourites sent to you:</h3>
+                            <input type = "name" id = "name" size="10" name = "name" placeholder="Your Name" required>
+                            <input type = "email" id = "Email" size="30" name = "email" placeholder="Enter your email address" required>
+                        <br><br>
+                            <button type="submit">Send</button>
+                        <br><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer.html'  %}
+{% endblock %}

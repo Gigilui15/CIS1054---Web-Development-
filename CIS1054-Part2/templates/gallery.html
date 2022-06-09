@@ -1,0 +1,50 @@
+{% extends "layout.html" %} 
+
+{% block header %}
+    {% include 'header.html'  %}
+{% endblock %}
+
+{% block content %}
+  <div class="wrapper">
+
+    <section id="behind">
+    <nav>
+      <div class="items">
+        <span class="item active" data-name="all">All</span>
+        <span class="item" data-name="menu">Menu</span>
+        <span class="item" data-name="food">Food</span>
+        <span class="item" data-name="service">Service</span>
+        <span class="item" data-name="place">Place</span>
+        
+      </div>
+    </nav>
+    
+    <div class="gallery">
+      <div class="image" data-name="place"><span><img src="assets/image/gallery/pic1.jpg" alt=""></span></div>
+      <div class="image" data-name="service"><span><img src="assets/image/gallery/pic2.jpg" alt=""></span></div>
+      <div class="image" data-name="service"><span><img src="assets/image/gallery/pic3.jpg" alt=""></span></div>
+      <div class="image" data-name="service"><span><img src="assets/image/gallery/pic4.jpg" alt=""></span></div>
+      <div class="image" data-name="service"><span><img src="assets/image/gallery/pic5.jpg" alt=""></span></div>
+      <div class="image" data-name="place"><span><img src="assets/image/gallery/pic6.jpg" alt=""></span></div>
+      <div class="image" data-name="place"><span><img src="assets/image/gallery/pic7.jpg" alt=""></span></div>
+      <div class="image" data-name="food"><span><img src="assets/image/gallery/pic8.jpg" alt=""></span></div>
+      <div class="image" data-name="food"><span><img src="assets/image/gallery/pic9.jpg" alt=""></span></div>
+      <div class="image" data-name="food"><span><img src="assets/image/gallery/pic10.jpg" alt=""></span></div>
+      <div class="image" data-name="food"><span><img src="assets/image/gallery/pic11.jpg" alt=""></span></div>
+      <div class="image" data-name="food"><span><img src="assets/image/gallery/pic12.jpg" alt=""></span></div>
+      <div class="image" data-name="menu"><span><img src="assets/image/gallery/pic13.jpg" alt=""></span></div>
+      <div class="image" data-name="menu"><span><img src="assets/image/gallery/pic14.jpg" alt=""></span></div>
+      <div class="image" data-name="menu"><span><img src="assets/image/gallery/pic15.jpg" alt=""></span></div>
+      <div class="image" data-name="menu"><span><img src="assets/image/gallery/pic16.jpg" alt=""></span></div>
+      <div class="image" data-name="place"><span><img src="assets/image/gallery/pic17.jpg" alt=""></span></div>
+      <div class="image" data-name="place"><span><img src="assets/image/gallery/pic18.jpg" alt=""></span></div>
+    </div>
+  </div>
+  
+</section>
+  <script src="assets\js\filter.js"></script>
+{%endblock%}
+
+{% block footer %}
+    {% include 'footer.html'  %}
+{% endblock %}
